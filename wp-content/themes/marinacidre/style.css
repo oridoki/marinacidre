@@ -1,0 +1,805 @@
+/**
+ * Theme Name: Marina Cidre
+ * Theme URI: http://www.marinacidre.com
+ * Description: Marina Cidre
+ * Version: 0.1
+ * Author: WebClau
+ * Author URI: http://www.webclau.com
+ * Tags: 
+ *Template: hybrid
+*/
+/* Get base CSS */
+@import url('../hybrid/library/css/21px.css');
+
+/* Get default Hybrid CSS */
+@import url('../hybrid/library/css/screen.css');
+
+/* Get the plugins CSS */
+@import url('../hybrid/library/css/plugins.css');
+
+/* Get the plugins CSS */
+@import url('../hybrid/library/css/drop-downs.css');
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family : Arial, Georgia,Times,"Times New Roman",serif;
+	font-size 	: 12px;
+}
+
+.floatfix {
+	clear:both;
+}
+
+
+/* Normalización y cosas raras*/
+div#header {
+	margin-top : -40px;
+}
+
+div.breadcrumb, div.breadcrumbs, .byline, .entry-meta {
+	display 	: none;
+}
+
+body {
+	background 	: #000 url("http://marinacidre.com/wp-content/themes/marinacidre/images/background.jpg") no-repeat center top;
+}
+
+#body-container {
+	width		: 986px;
+	min-height 	: 1000px;
+	margin 		: 0px auto 50px auto;
+}
+
+
+/*  HEADER  */
+
+	div#header-container {
+		height		: 412px;
+		background 	: #1c1c1b url("images/header.jpg") no-repeat top left;
+	}
+
+	h1#site-title, div#site-title {
+		cursor 		: pointer;
+		height 		: 120px;
+		margin-left : 460px;
+		position 	: absolute;
+		top 		: 15px;
+		width 		: 480px;
+	}
+	
+	h1#site-title a, div#site-title a {
+		display 	: none;
+	}
+	
+	h2#site-description, div#site-description {
+		position 	: absolute;
+		height 		: 30px;
+		margin-left : 500px;
+		top 		: 140px;
+		width 		: 270px;
+	}
+
+	h2#site-description span, div#site-description span {
+		font-size 	: 16px;
+		color 		: #FFF;
+		font-style 	: italic;
+		font-weight : normal;
+	}
+
+	#navigation {
+		height	: 47px;
+		margin 	: 0px;
+		overflow : hidden;
+	}
+	
+	#page-nav li a {	
+		background  : transparent;
+		color 		: #FEFDFD;
+		border 		: 0px;
+		letter-spacing: 5px;
+		padding 	: 7px 0 0 0;
+		width 		: 168px;
+		text-transform: uppercase;
+	}
+	
+	#page-nav li {
+		margin 		: 5px 0px;
+		padding 	: 5px 0px;
+		height 		: 27px;
+		text-align 	: center;
+		border-right: 1px solid white;
+	}
+	
+	#page-nav li.current_page_item a {
+	}
+	
+/*  !HEADER  */
+
+/*  SECONDARY */
+	#secondary {
+		position 	: absolute;
+		top 		: 200px;
+		margin-left : 500px;
+		width 		: 190px;
+		height 		: 150px;
+		color 		: #FFF;
+		overflow 	: hidden;
+	}
+	
+	#secondary .widget {
+		color 		: #FFF;
+		font-weight : normal;
+	}	
+/*  !SECONDARY */
+
+/*  PRIMARY */
+	#primary {
+		position 	: absolute;
+		top 		: 511px;
+		margin-left : 78px;
+		width 		: 215px;
+		height 		: 20px;
+		padding 	: 0px;
+	}
+
+	#primary .widget {
+		background 	: #FFF url("images/menu.jpg") repeat-y;
+		border 		: 1px solid #A18A7D;
+		padding 	: 5px;
+	}
+	
+/*  !PRIMARY */
+
+/*  CENTRAL  */
+	div#container {
+		margin 		: 0px;
+		background 	: url("images/container.jpg") repeat-y;
+	}
+
+	div#content {
+		padding-top : 0px;
+		background 	: url("images/central.jpg") no-repeat top left;
+	}
+
+	div.content, .no-widgets .content, .page-template-no-widgets .content {
+		width 		: 620px;
+		margin 		: 0px auto 0 auto;
+		padding 	: 60px 5px 170px 295px;
+		min-height	: 500px;
+	}
+/*  !CENTRAL  */
+
+/*  DISTORSION  */
+
+.wc_distorsion {
+	position  	: absolute;
+	top 		: 0px;
+	margin-left : 90px;
+	height 	 	: 406px;
+	width 	 	: 212px;
+}
+
+#distorsion1, #distorsion2 {
+	position 	: absolute;
+	top 		: 0px;
+	left 		: 0px;
+	height 	 	: 406px;
+	width 	 	: 212px;
+}
+
+#distorsion1 {
+	background 	: url("images/distorsion1.png") no-repeat top left;
+}
+
+#distorsion2 {
+	background 	: url("images/distorsion2.png") no-repeat top left;
+	display 	: none;
+}
+
+
+/*  !DISTORSION  */
+
+.leftSide {
+	position 		: absolute;
+	width 			: 200px;
+	margin-left		: -230px;
+	
+}
+
+
+/* HOME */
+
+body.page-template-myHome .leftSide {
+	position 		: relative;
+	float 			: left;
+	width 			: 200px;
+	margin-left		: 0px;
+	
+}
+
+body.page-template-myHome .rightSide {
+	position 		: relative;
+	margin-left 	: 30px;
+	float 			: left;
+	width 			: 600px;
+	border-top 		: 1px solid #666;
+	border-bottom 		: 1px solid #666;
+}
+
+body.page-template-myHome #primary {
+	display 		: none;
+}
+
+body.page-template-myHome .content {
+	padding 		: 70px 20px 0px 100px;
+	width 			: 875px;
+}
+
+.facebook {
+	background 		: url("images/facebook.jpg") no-repeat top left;
+	cursor 			: pointer;
+}
+
+.contact {
+	background 		: url("images/contact.jpg") no-repeat top left;
+	cursor 			: pointer;
+}
+
+div.galleria {
+	background 		: url("images/gallery.jpg") no-repeat top left;
+	cursor 			: pointer;
+}
+
+.facebook, .contact, .galleria {
+	width 			: 135px;
+	height 			: 55px;
+	padding 		: 5px 0px 0px 65px;
+	text-align 		: left;
+	font-size 		: 15px;
+	color 			: #4A291B;
+	margin-bottom 	: 7px;
+	cursor 			: pointer;
+}
+
+.contact {
+	padding-top 	: 15px;
+	height			: 40px;
+}
+
+.whoami {
+	background 	: #FFF url("images/menu.jpg") repeat-y;
+	border 		: 1px solid #A18A7D;
+	padding 	: 10px;
+	line-height : 1.2em;
+}
+
+div.homenews {
+	position 	: relative;
+	float 		: left;
+	clear 		: both;
+	width 		: 831px;
+	border-top 	: 1px solid #4A291B;
+	margin-top 	: 20px;
+	padding-top	: 15px;
+}
+
+div.homenew {
+	position 	: relative;
+	float 		: left;
+	background 	: #FFF url("images/menu.jpg") repeat-y;
+	width 		: 235px;
+	height 		: 120px;
+	margin 		: 10px;
+	margin-bottom: 30px;
+	border 		: 1px solid #A18A7D;
+	padding 	: 10px;
+	line-height : 1.2em;
+	color		: #4A291B;
+}
+
+div.homenew h1 a {
+	font-size 		: 15px;
+	color 			: #4A291B;
+}
+
+/* !HOME */
+
+
+
+.page-title, .attachment-title {
+	font-size 	: 18px;
+}
+.post {
+	overflow : visible;
+}
+
+.entry-title a {
+	color 		: #000000;
+	font-size 	: 15px;
+	font-style 	: normal;
+	font-weight : bold;
+	
+}
+
+
+/* CONTACTAR */
+body.page-6 div.entry-content {
+	background 	: url("http://marinacidre.com/wp-content/themes/marinacidre/images/contactar.jpg") no-repeat top left;
+}
+
+
+/* CONTACTAR */
+
+#page-nav li ul {
+	display 	: none;
+}
+
+.s_submenu {
+	background  : #F7A674 url("http://marinacidre.com/wp-content/themes/marinacidre/images/s_submenu.jpg") no-repeat top left;
+	width 		: 235px;
+}
+.s_submenu h1 {
+	text-align 	: center;
+	color 		: #FFF;
+	text-transform: uppercase;
+	padding		: 5px 0 0 0;
+}
+.s_submenu ul {
+	padding 	: 0px 0 10px 0px;
+	margin 		: 0px;
+}
+
+.s_submenu ul li{
+	text-align 	: center;
+	color 		: #000;
+	text-transform: uppercase;
+	list-style 	: none;
+	padding 	: 0px;
+	margin 		: 0px;
+}
+
+.s_submenu ul li a{
+	color 		: #000;
+}
+
+.s_content, .b_content {
+	height 		: 650px;
+	background  : #FFF url("http://marinacidre.com/wp-content/themes/marinacidre/images/s_content.jpg") repeat-y 6px;
+	margin-bottom: 3px;
+}
+
+.s_header {
+	width 		: 821px;
+	height 		: 71px;
+	background  : #FFF url("http://marinacidre.com/wp-content/themes/marinacidre/images/s_header.jpg") no-repeat top left;
+	margin-left : 6px;
+}
+.s_left {
+	float 		: left;
+	margin 		 : -40px 0 0 40px;
+	width 		: 235px;
+}
+
+.s_right {
+	float 		: left;
+	margin  	: 0px 0 0 12px;
+	width 		: 530px;
+	padding-top : 10px;
+	overflow-x 	: hidden;
+}
+
+.s_post h1,  .s_post h2 {
+	display 	: none;
+}
+
+.s_right .s_post {
+	min-height	: 400px;
+	margin-top 	: 20px;
+}
+
+.linked {
+	cursor 		: pointer;
+}
+
+.s_atencio {
+	position 	: absolute;
+	text-align 	: center;
+	width 		: 235px;
+	margin 		: -115px 0 0 -14px ;
+	color 		: #000;
+	line-height	: 15px;
+	font-weight : bold;
+	background 	: #F7A674 url("http://marinacidre.com/wp-content/themes/marinacidre/images/atencio.jpg") no-repeat top left;
+	padding-top : 10px;
+	height		: 20px;
+	overflow 	: hidden;
+}
+
+.s_atencio h1 {
+	text-transform 	: uppercase;
+	color 			: #FFF;
+	text-align 		: center;
+	padding: 0px;
+	margin-bottom: 17px;
+}
+
+.s_slogan {
+	position 	:  absolute;
+	margin 		: -65px 0 0 245px;
+	width 		: 485px;
+	line-height	: 17px;
+	letter-spacing : 1px;
+}
+.entry-content {
+	line-height	: 16px;
+	text-align 	: justify;
+}
+
+
+
+.s_post {
+	padding 	: 20px 20px 20px 60px;
+}
+
+.s_left .s_post {
+	padding 	: 20px 10px 20px 10px;	
+}
+
+
+.b_post h1.page-title {
+	width 		: 235px;
+	height 		: 25px;
+	margin 		: -60px 0 20px -22px;
+	padding-top : 5px;
+	background 	: url("http://marinacidre.com/wp-content/themes/marinacidre/images/atencio.jpg") no-repeat top left;
+	display 	: block;
+	color 		: #FFF;
+	text-align 	: center;
+	text-transform: uppercase;
+}
+.s_post h1.page-title a {
+	color 		: #FFF;
+	font-style:normal;
+}
+
+
+div#footer-container {
+	width 		: 985px;
+	height 		: 81px;
+	background 	: url("images/footer.jpg") no-repeat top left;
+}
+
+#footer {
+	color 		: #FFF;
+	padding 	: 30px 20px;
+}
+
+#footer a {
+	color 		: #FFF;
+	font-weight	:bold;
+}
+
+
+.qtrans_language_chooser li{
+	float 	: right;
+	list-style: none;
+	padding 	: 0px;
+	margin 		: 0px;
+	margin-left: 10px;
+}
+
+.qtrans_language_chooser li a span, .qtrans_language_chooser li.active a span{
+	font-size 	: 11px;
+	
+}
+
+.qtrans_language_chooser li a, .qtrans_language_chooser li.active a {
+	text-transform : uppercase;
+	color : #FFF;
+	font-style : normal;
+	text-decoration : none;
+}
+.qtrans_language_chooser li.active a {
+	font-weight	: bold;
+}
+
+
+
+
+/* ROTATOR */
+/* HOME ROTATOR */
+.main_image {
+    width: 600px;
+    height: 330px;
+    float: left;
+    background: #333;
+    position: relative;
+    overflow: hidden; /*--Overflow hidden allows the description to toggle/tuck away as it slides down--*/
+    color: #fff;
+	margin-top : 0px;
+}
+.main_image h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 5px;
+    padding: 10px 10px 0px 50px;
+	color : #FFF;
+}
+.main_image p {
+    font-size: 15px;
+    line-height: 17px;
+    padding: 0px 50px 10px 50px;
+    margin: 0;
+	font-weight:normal;
+}
+.block small { /*--We'll be using this same style on our thumbnail list--*/
+    font-size: 1em;
+    padding: 0 0 0 20px;
+    background: url("http://marinacidre.com/wp-content/themes/marinacidre/icon_calendar.gif") no-repeat 0 center;
+}
+.main_image .block small {margin-left: 10px;}
+.main_image .desc{
+    position: absolute;
+    bottom: 0;
+    left: 0; /*--Stick the desc class to the bottom of our main image container--*/
+    width: 100%;
+    display: none; /*--Hide description by default, if js is enabled, we will show this--*/
+	height: 80px;
+}
+.main_image .block{
+    width: 100%;
+    background: #111;
+	height: 80px;
+}
+.main_image a.collapse { /*--This is our hide/show tab--*/
+    background: url("http://marinacidre.com/wp-content/themes/marinacidre/btn_collapse.gif") no-repeat left top;
+    height: 27px;
+    width: 93px;
+    text-indent: -99999px;
+    position: absolute;
+    top: -27px;
+    right: 20px;
+}
+.main_image a.show {background-position: left bottom;}
+
+.image_thumb {
+    float: left;
+    width: 165px;
+	overflow:hidden;
+	display : none;
+}
+.image_thumb img {
+    padding: 5px;
+    float: left;
+}
+.image_thumb ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.image_thumb ul li{
+    margin: 0;
+    padding: 13px 10px 0 10px;
+    width: 194px;
+	height : 69.5px;
+    float: left;
+	padding-left: 10px;
+	cursor 		: pointer;
+	background 	: url("images/image_thumb.jpg") repeat-x;
+	border-left	: 1px solid #F5DAEF;
+	border-right	: 1px solid #A18A7D;
+}
+.image_thumb ul li.hover { /*--Hover State--*/
+    cursor: pointer;
+}
+.image_thumb ul li.active { /*--Active State--*/
+    cursor: default;
+}
+html .image_thumb ul li h2 {
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 16px 0 0 0;
+	font-weight	: normal;
+	line-height: 16px;
+}
+.image_thumb ul li a {
+	float : left;
+	margin-top : 20px;
+}
+.image_thumb ul li .block {
+    float: left;
+	clear: none;
+    margin-left: 10px;
+    padding: 0;
+    width: 165px;
+}
+.image_thumb ul li p{display: none;}
+
+.alignnone, .block {
+	margin: 0px;
+}
+
+
+.slogan1 {
+	margin 	: 20px 0 10px 0 ;
+	text-align 	: center;
+	font-size 	: 14px;
+	color 		: #FFF;
+}
+.slogan1 strong {
+	font-size 	: 16px;
+	
+}
+.slogan2 {
+	font-size	: 14px;
+	font-weight : bold;
+	margin-top 	: 20px;
+}
+
+div.serveis {
+	float 	: left;
+	width	: 659px;
+	padding-left : 10px;
+	height 	: 203px;
+	background 	: url("http://marinacidre.com/wp-content/themes/marinacidre/images/serveis.jpg") no-repeat top left;
+}
+
+div.promo {
+	float 	: left;
+	width 	: 205px;
+	margin 	: 10px 0 0 20px;
+	font-size 	: 11px;
+	text-align 	: justify;
+	line-height : 13px;
+}
+
+.concept {
+	position 	: relative;
+	float 		: left;
+	width 		: 195px;
+	height 		: 110px;
+	padding 	: 0px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.conceptIMG {
+	float 	: left;
+	width 	:  60px;
+}
+.conceptTXT {
+	float 	: left;
+	width 	:  120px;
+	color 	: #FFF;
+	margin-left: 10px;
+	line-height : 18px;
+}
+
+.concept h2 {
+	font-size : 18px;
+	font-weight: bold;
+	color 	: #FFF;
+	margin 	: 0 0 10px 0;
+	padding : 0px;
+}
+
+div.container {
+	padding-bottom: 15px;
+}
+
+.image_thumb ul li.active h2 {
+	color 	: #F60;
+}
+
+.main_cto {
+    width: 669px;
+    height: 600px;
+    float: left;
+    position: relative;
+}
+.main_pfl {
+    width: 669px;
+    min-height: 500px;
+    float: left;
+    position: relative;
+	color 		: #FFF;
+}
+.main_access {
+    width: 639px;
+    float: left;
+    position: relative;
+	background: url("http://marinacidre.com/wp-content/themes/marinacidre/images/access.gif") no-repeat top left;
+	padding : 15px;
+}
+
+.main_pfl .entry-content {
+	color 	: #000;
+}
+
+.breadcrumb {
+	display 	: none;
+}
+
+/* !ROTATOR */
+
+
+/***** CONTACTAR ****/
+form.cform {
+	margin : 10px auto 50px auto;
+}
+
+form.cformsform {
+	background 	: url("http://wcmedia.s3.amazonaws.com/josifer/contactar.jpg") no-repeat 0 40px;
+}
+
+form.cform fieldset {
+	background 	: transparent;
+	border-width : 0px;
+	padding 	: 0px;
+	margin 		: 0px;
+}
+
+form.cform legend {
+	display 	: none;
+}
+
+div.entry ol.cf-ol li {
+	background	: url("http://wcmedia.s3.amazonaws.com/josifer/input2.png") no-repeat top left !important;
+	height 		: 32px;
+	width 		: 389px;
+	padding 	: 5px 0 0 0;
+}
+
+form.cform textarea, form.cform input {
+	border-width: 0px;
+	background 	: #FFF;
+	height 		: 20px;
+	width 		: 245px;
+}
+
+form.cform textarea{
+	height		: 100px;
+}
+form.cform .cf-fs2 {
+	margin-top 	: 0px;
+}
+
+form.cform .emailreqtxt, form.cform span.reqtxt {
+	display 	: none;
+}
+
+div.entry ol.cf-ol li#li--9 {
+	background	: url("http://wcmedia.s3.amazonaws.com/josifer/area.png") no-repeat top left !important;
+	height 		: 150px;
+	width 		: 389px;
+	padding 	: 5px 0 0 0;
+}
+
+form.cform p.cf-sb {
+	margin:-35px 0 0 200px;
+	position:absolute;
+	width:150px;
+}
+
+form.cform input.backbutton, form.cform input.resetbutton, form.cform input.sendbutton {
+	width 	: 150px;
+	margin 	: 0px;
+	*margin-left: -150px;
+	height	: 20px;
+	border-width: 0px;
+	border : 0px !important;
+	background 	: #FFF;
+	font-size 	: 12px;
+	text-transform : uppercase;
+	cursor 		: pointer;
+}
+
+div.cform {
+	margin-top 	: 0px;
+}
+
+label {
+	color 		: #000;
+}
+
+/***** !CONTACTAR ****/
+
